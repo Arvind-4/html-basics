@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+    />
+    <link href="./css/style.css" rel="stylesheet" />
+
+    <link rel="icon" type="image/png" href="./favicon/favicon.ico" />
+
+    <title>Counter</title>
+    <nav
+      class="
+        font-sans
+        flex flex-col
+        text-center
+        content-center
+        sm:flex-row sm:text-left sm:justify-between
+        py-2
+        px-6
+        bg-white
+        shadow
+        sm:items-baseline
+        w-full
+      "
+    >
+      <div class="mb-2 sm:mb-0 flex flex-row">
+        <div class="h-10 w-10 self-center mr-2">
+          <img class="h-10 w-10 self-center" src="./asserts/Logo.jpg" />
+        </div>
+        <div>
+          <a
+            href="/"
+            class="
+              text-2xl
+              no-underline
+              text-grey-darkest
+              hover:text-blue-dark
+              font-sans font-bold
+            "
+          >
+            Awesome Website </a
+          ><br />
+          <span class="text-xs text-grey-dark"> Eat. Sleep. Code. Repeat </span>
+        </div>
+      </div>
+
+      <div class="sm:mb-0 self-center">
+        <a
+          href="/"
+          class="text-md no-underline text-black hover:text-blue-dark ml-2 px-1"
+        >
+          Home
+        </a>
+
+        <a
+          href="/about.html"
+          class="text-md no-underline text-black hover:text-blue-dark ml-2 px-1"
+        >
+          About Us
+        </a>
+        <a
+          href="/counter.html"
+          class="text-md no-underline text-black hover:text-blue-dark ml-2 px-1"
+        >
+          Simple Counter
+        </a>
+      </div>
+    </nav>
+  </head>
+  <body class="bg-yellow-300">
+    <div class="min-h-screen">
+      <div class="flex" style="padding-top: 125px">
+        <div class="m-auto">
+          <h1
+            class="
+              text-gray-100
+              font-extrabold
+              text-4xl
+              xs:text-5xl
+              md:text-6xl
+            "
+          >
+            <span class="text-gray-900">Starting in ...</span>
+          </h1>
+          <br />
+          <br />
+        </div>
+      </div>
+      <div class="flex justify-center items-center" style="padding-top: 150px">
+        <div
+          class="
+            flex
+            items-center
+            py-4
+            overflow-y-auto
+            whitespace-nowrap
+            text-3xl
+            font-mono
+          "
+        >
+          <li style="list-style: none"><span id="days"></span> Days</li>
+
+          <span class="mx-5 text-gray-500 dark:text-gray-300"> </span>
+
+          <li style="list-style: none"><span id="hours"></span> Hours</li>
+
+          <span class="mx-5 text-gray-500 dark:text-gray-300"> </span>
+
+          <li style="list-style: none"><span id="minutes"></span> Minutes</li>
+
+          <span class="mx-5 text-gray-500 dark:text-gray-300"> </span>
+
+          <li style="list-style: none"><span id="seconds"></span> Seconds</li>
+        </div>
+      </div>
+    </div>
+  </body>
+  <div class="bg-gray-900">
+    <footer class="flex flex-wrap items-center justify-between p-3 m-auto">
+      <div
+        class="
+          container
+          mx-auto
+          flex flex-col flex-wrap
+          items-center
+          justify-between
+        "
+      >
+        <ul class="flex mx-auto text-white text-center">
+          <li class="p-2 cursor-pointer">
+            <i class="fab fa-facebook-square fa-2x"></i>
+          </li>
+          <li class="p-2 cursor-pointer">
+            <i class="fab fa-instagram fa-2x"></i>
+          </li>
+        </ul>
+        <div class="flex mx-auto text-white text-center">
+          Copyright Awesome Website © 2021
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script src="./js/script.js"></script>
+</html>
